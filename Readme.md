@@ -1,8 +1,12 @@
 # Nodejs Socket demo
 
-Node.js socket 其实非常简单，只需要用 `net.createServer` 即可创建一个 Socket 服务端，并开始监听。
+Node.js socket 其实非常简单，只需要用 `net.createServer` 即可创建一个 Socket 服务端，并开始监听。只需要短短几十行代码，即可实现socket的连接。
 
-```js server.js
+![](./screenshot.gif)
+
+**server.js**
+
+```js 
 const net = require("net");
 
 const port = 1234;
@@ -44,7 +48,7 @@ server.on("error", function (exception) {
 });
 ```
 
-
+**client.js**
 ```js
 const net = require('net');
 const port = 1234;
